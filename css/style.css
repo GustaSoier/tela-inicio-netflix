@@ -1,0 +1,248 @@
+* {
+    padding: 0;
+}
+  
+body {
+    margin: 0;
+    background-color: #393939;
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+.header {
+    background-color: black;
+    width: 100vw;
+    height: auto;
+  
+}
+  
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+  
+.menu nav ul a {
+    list-style: none;
+    color: rgba(255, 255, 255, 0.788);
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+  
+.menu nav ul a:hover {
+    color: white;
+}
+  
+.menu nav ul a:last-child {
+    margin: 0;
+}
+  
+.logo {
+    display: inline-block;
+}
+  
+.logo img {
+    width: 130px;
+}
+  
+.search {
+    width: 130px;
+    justify-content: center;
+    display: flex;
+}
+  
+.user {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    left: 50%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.user .select {
+    margin-right: 30px;
+    width: 180px;
+    height: 180px;
+    transition: all .2s linear;
+}
+  
+.user:hover :not(:hover) {
+    opacity: 0.6;
+}
+  
+.select:hover {
+    scale: 1.1;
+    color: white;
+}
+  
+.select:last-child {
+    margin: 1;
+}
+  
+.user img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+  
+.user h2 {
+    text-align: center;
+    color: gray;
+    font-size: 18px;
+}
+  
+.titulo {
+    text-align: center;
+    color: white;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -28%);
+    position: absolute;
+    font-size: 1.5rem;
+}
+  
+.gerenciar a {
+    bottom: 18%;
+    left: 50%;
+    transform: translate(-50%, -18%);
+    position: absolute;
+    text-decoration: none;
+    color: gray;
+    border: 1px solid gray;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: all 0.2s linear;
+}
+  
+.gerenciar a:hover {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(48, 48, 48);
+}
+  
+@media (min-width: 1600px) {
+.content {
+    max-width: 1600px;
+    margin: auto;
+}
+}
+  
+@media (max-width: 1200px) {
+.user .select {
+    width: 130px;
+    height: 130px;
+}
+  
+.titulo h1 {
+    font-size: 40px;
+}
+  
+.titulo {
+    top: 30%;
+    width: 100vw;
+}
+}
+  
+@media (max-width: 900px) {
+.user .select {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+  
+.select {
+    margin-bottom: 50px;
+}
+  
+.titulo {
+    width: 100vw;
+    top: 30%;
+}
+  
+.titulo h1 {
+font-size: 35px;
+}
+}
+  
+ @media (max-width: 730px) {
+.user {
+    flex-wrap: wrap;
+}
+  
+.menu a:nth-child(4) {
+    display: none;
+}
+  
+.menu a:nth-child(5) {
+    display: none;
+}
+  
+.menu a:nth-child(6) {
+    display: none;
+}
+
+.user {
+    width: 400px;
+    top: 52%;
+}
+
+.titulo {
+    top: 20%;
+}
+
+.gerenciar a {
+    bottom: 11%;
+}
+}
+  
+@media (max-width: 500px) {
+.search {
+    display: none;
+}
+
+.user .select {
+    width: 90px;
+    height: 90px;
+    margin-right: 20px;
+}
+
+.user {
+    width: 350px;
+    top: 50%;
+}
+
+.titulo {
+    top: 20%;
+}
+
+.titulo h1 {
+    font-size: 30px;
+}
+
+.gerenciar a {
+    bottom: 13%;
+}
+}
+
+@media (max-width: 450px) {
+.titulo h1 {
+    font-size: 25px;
+}
+
+.user .select {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.titulo {
+    top: 23%;
+}
+}
